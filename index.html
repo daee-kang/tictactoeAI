@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>unbeatable tic tac toe</h1>
+    <br>
+    <div>
+        <div class='square' id='1' onclick="makeChoice(this)"></div>
+        <div class='square' id='2' onclick="makeChoice(this)"></div>
+        <div class='square' id='3' onclick="makeChoice(this)"></div>
+    </div>
+    <div>
+        <div class='square' id='4' onclick="makeChoice(this)"></div>
+        <div class='square' id='5' onclick="makeChoice(this)"></div>
+        <div class='square' id='6' onclick="makeChoice(this)"></div>
+    </div>
+    <div>
+        <div class='square' id='7' onclick="makeChoice(this)"></div>
+        <div class='square' id='8' onclick="makeChoice(this)"></div>
+        <div class='square' id='9' onclick="makeChoice(this)"></div>
+    </div>
+
+    <div>
+        <h1 id="announcer">It is your turn</h1>
+    </div>
+    <button id="restart" onclick="restart()" style="display:none">restart</button>
+</body>
+
+</html>
