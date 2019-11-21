@@ -1,7 +1,7 @@
 .square{
     height: 100px;
     width: 100px;
-    background-color: blue;
+    background-color: lightgray;
     display: inline-block;
 }   
 body {
@@ -9,3 +9,13 @@ body {
     margin: auto;
     text-align: center;
 }   
+
+button {
+    background-color: lightgray;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+button:focus{
+    background-color: darkgray
+}
