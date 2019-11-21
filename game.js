@@ -35,7 +35,7 @@ function restart(){
     grid = new Array(9);
     humanTurn = true;
     for(var i = 1; i < 10; i++){
-        document.getElementById(i).style.backgroundColor = 'blue';
+        document.getElementById(i).style.backgroundColor = 'lightgray';
     }
     document.getElementById('restart').style.display = "none";
     document.getElementById('announcer').textContent = `It is your turn`;
@@ -43,7 +43,7 @@ function restart(){
 
 function setPlayerTile(block){
     grid[block.id - 1] = "player";
-    document.getElementById(block.id).style.backgroundColor = 'red';
+    document.getElementById(block.id).style.backgroundColor = 'lightblue';
     humanTurn = false;
 }
 
@@ -83,7 +83,7 @@ function computerTurn(){
 
 function setComputerTile(block){
     grid[block] = "computer";
-    document.getElementById(block + 1).style.backgroundColor = 'yellow';
+    document.getElementById(block + 1).style.backgroundColor = 'lightcoral';
     humanTurn = true;
     isHumanTurn();
 }
